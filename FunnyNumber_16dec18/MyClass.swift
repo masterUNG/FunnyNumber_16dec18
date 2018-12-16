@@ -12,6 +12,10 @@ class MyClass {
     
 //    Explicit
     var number: Int = 0
+    var textNumber = ["Zero", "One", "Two", "Three", "Four"]
+    var indexNumber: Int = 0
+    
+    
     
     
     func backProcess(currentInt: Int) -> String {
