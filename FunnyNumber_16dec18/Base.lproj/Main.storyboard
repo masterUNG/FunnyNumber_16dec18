@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="FunnyNumber_16dec18" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Wallpaper" translatesAutoresizingMaskIntoConstraints="NO" id="eVr-zo-9XK">
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" alpha="0.5" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="999" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pcj-0b-IeP">
+                                <rect key="frame" x="20" y="315.5" width="374" height="265"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="180"/>
+                                <color key="textColor" red="0.92143100499999997" green="0.92145264149999995" blue="0.92144101860000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                                <color key="shadowColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <size key="shadowOffset" width="50" height="50"/>
+                            </label>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jvz-Pd-32f">
+                                <rect key="frame" x="0.0" y="813" width="414" height="49"/>
+                                <items>
+                                    <barButtonItem title="Item" id="yYS-aK-45z"/>
+                                </items>
+                            </toolbar>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="pcj-0b-IeP" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="6gW-0R-8XT"/>
+                            <constraint firstItem="eVr-zo-9XK" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="8WT-AX-lYK"/>
+                            <constraint firstItem="eVr-zo-9XK" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Bsm-AG-Yvm"/>
+                            <constraint firstItem="jvz-Pd-32f" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="Fm3-lf-uYA"/>
+                            <constraint firstItem="pcj-0b-IeP" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="Kfz-0D-b91"/>
+                            <constraint firstItem="eVr-zo-9XK" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="OFR-3V-v9e"/>
+                            <constraint firstItem="eVr-zo-9XK" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="cu1-wN-bi0"/>
+                            <constraint firstItem="jvz-Pd-32f" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="jD5-7k-HQU"/>
+                            <constraint firstItem="jvz-Pd-32f" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="lQN-7d-EIt"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="pcj-0b-IeP" secondAttribute="trailing" constant="20" id="s71-23-GYm"/>
+                            <constraint firstItem="pcj-0b-IeP" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="vTH-Gh-FQ6"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="47.826086956521742" y="20.758928571428569"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Wallpaper" width="3648" height="5472"/>
+    </resources>
+</document>
