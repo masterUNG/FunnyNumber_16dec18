@@ -13,6 +13,7 @@
 		C4F9F94121C62770004DAC78 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C4F9F94021C62770004DAC78 /* Assets.xcassets */; };
 		C4F9F94421C62770004DAC78 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C4F9F94221C62770004DAC78 /* LaunchScreen.storyboard */; };
 		C4F9F94C21C6368B004DAC78 /* MyClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4F9F94B21C6368B004DAC78 /* MyClass.swift */; };
+		C4F9F94E21C63CF3004DAC78 /* ShowTextViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4F9F94D21C63CF3004DAC78 /* ShowTextViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		C4F9F94321C62770004DAC78 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C4F9F94521C62770004DAC78 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C4F9F94B21C6368B004DAC78 /* MyClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyClass.swift; sourceTree = "<group>"; };
+		C4F9F94D21C63CF3004DAC78 /* ShowTextViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowTextViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +60,7 @@
 			children = (
 				C4F9F93921C6276F004DAC78 /* AppDelegate.swift */,
 				C4F9F93B21C6276F004DAC78 /* ViewController.swift */,
+				C4F9F94D21C63CF3004DAC78 /* ShowTextViewController.swift */,
 				C4F9F94B21C6368B004DAC78 /* MyClass.swift */,
 				C4F9F93D21C6276F004DAC78 /* Main.storyboard */,
 				C4F9F94021C62770004DAC78 /* Assets.xcassets */,
@@ -138,6 +141,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C4F9F94E21C63CF3004DAC78 /* ShowTextViewController.swift in Sources */,
 				C4F9F93C21C6276F004DAC78 /* ViewController.swift in Sources */,
 				C4F9F93A21C6276F004DAC78 /* AppDelegate.swift in Sources */,
 				C4F9F94C21C6368B004DAC78 /* MyClass.swift in Sources */,
