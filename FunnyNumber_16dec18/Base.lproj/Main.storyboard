@@ -21,7 +21,7 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Wallpaper" translatesAutoresizingMaskIntoConstraints="NO" id="eVr-zo-9XK">
                                 <rect key="frame" x="0.0" y="44" width="414" height="818"/>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" alpha="0.5" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="999" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pcj-0b-IeP">
+                            <label opaque="NO" userInteractionEnabled="NO" alpha="0.5" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pcj-0b-IeP">
                                 <rect key="frame" x="20" y="315.5" width="374" height="265"/>
                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="180"/>
@@ -31,10 +31,27 @@
                                 <size key="shadowOffset" width="50" height="50"/>
                             </label>
                             <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jvz-Pd-32f">
-                                <rect key="frame" x="0.0" y="813" width="414" height="49"/>
+                                <rect key="frame" x="0.0" y="809" width="414" height="53"/>
                                 <items>
-                                    <barButtonItem title="Item" id="yYS-aK-45z"/>
+                                    <barButtonItem title="Item" image="ArrowBack" id="yYS-aK-45z">
+                                        <connections>
+                                            <action selector="backButton:" destination="BYZ-38-t0r" id="Q4N-1h-Q25"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="TXm-S1-zpF"/>
+                                    <barButtonItem title="Zero" id="j16-CU-0fO">
+                                        <connections>
+                                            <action selector="zeroButton:" destination="BYZ-38-t0r" id="r1F-OO-C9P"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="gly-Tu-YRU"/>
+                                    <barButtonItem title="Item" image="ArrowNext" id="48f-8D-Hb7">
+                                        <connections>
+                                            <action selector="nextButton:" destination="BYZ-38-t0r" id="S1D-Qp-tcm"/>
+                                        </connections>
+                                    </barButtonItem>
                                 </items>
+                                <color key="tintColor" red="0.58081901069999997" green="0.088427625600000004" blue="0.31863921880000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </toolbar>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -53,6 +70,9 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="numberLabel" destination="pcj-0b-IeP" id="J1E-XB-P7i"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -60,6 +80,8 @@
         </scene>
     </scenes>
     <resources>
+        <image name="ArrowBack" width="48" height="48"/>
+        <image name="ArrowNext" width="48" height="48"/>
         <image name="Wallpaper" width="3648" height="5472"/>
     </resources>
 </document>
